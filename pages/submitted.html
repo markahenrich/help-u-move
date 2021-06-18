@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="../css/materialize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+            background-image: url(../assets/background4.jpg);
+            background-position: center;
+        }
+        
+    </style>
+    <title>Help-U-Move Inc.</title>
+</head>
+
+<body>
+    <head>
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper container">
+                <a href="../index.html" class="brand-logo">
+                    <img src="../assets/help-u-move-logo.jpg" class="responsive-img" width="150">
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down" >
+                    <li><a href="../index.html" class="black-text">Home</a></li>
+                    <li><a href="./tips.html" class="black-text">Tips</a></li>
+                    <li><a href="#" class="black-text">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./tips.html">Tips</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </head>
+
+    <main class="valign-wrapper white-text"> 
+        <div class="container center-align">
+            <h3>Your information has been successfully sent!</h3>
+            <h3>We'll be in touch soon!</h3>
+        </div>
+    </main>
+
+    
+
+    <footer class="page-footer blue lighten-1">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2021 Help-U-Move Inc.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <script src="../js/materialize.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/contact.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.datepicker');
+        var instances = M.Datepicker.init(elems);
+      });
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var textNeedCount = document.querySelectorAll('#name, #comments, #email, #phone, #from_address, #to_address');
+         M.CharacterCounter.init(textNeedCount);
+      });
+        
+    </script>
+</body>
+</html>
